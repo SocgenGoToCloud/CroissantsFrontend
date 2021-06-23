@@ -1,13 +1,58 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  position: relative;
+  z-index: 1000;
+}
+
+.add-todo-input,
+.edit-todo-input {
+  outline: none;
+}
+
+.add-todo-input:focus,
+.edit-todo-input:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.view-opt-label,
+.date-label {
+  font-size: 0.8rem;
+}
+
+.edit-todo-input {
+  font-size: 1.7rem !important;
+}
+
+.todo-actions {
+  visibility: hidden !important;
+}
+
+.todo-item:hover .todo-actions {
+  visibility: visible !important;
+}
+
+.todo-item.editing .todo-actions .edit-icon {
+  display: none !important;
+}
+
+.text-primary {
+  color: #E3001E !important;
+}
+
+.btn-primary {
+  border-color: #E3001E !important;
+  background-color: #E3001E !important;
+}
+
+label {
+  float: left;
+}
+
+button {
+  width: 100%;
 }
